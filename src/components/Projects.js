@@ -4,15 +4,13 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import { FaVideo } from 'react-icons/fa';
 
 function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [, setSelectedProject] = useState(null);
 
   const openProject = (project) => {
     setSelectedProject(project);
   };
 
-  const closeProject = () => {
-    setSelectedProject(null);
-  };
+ 
 
   return (
     <div id='projects' className="p-4">
