@@ -8,13 +8,13 @@ import { MysqlOriginalWordmark } from 'devicons-react';
 import { PythonOriginalWordmark } from 'devicons-react';
 import { COriginal } from 'devicons-react';
 import { CplusplusOriginal } from 'devicons-react';
-import { GithubOriginal } from 'devicons-react';
-import { BootstrapPlainWordmark } from 'devicons-react';
-import { SpringOriginal } from 'devicons-react';
-import { TailwindcssPlain } from 'devicons-react';
+// import { GithubOriginal } from 'devicons-react';
+// import { BootstrapPlainWordmark } from 'devicons-react';
+// import { SpringOriginal } from 'devicons-react';
+// import { TailwindcssPlain } from 'devicons-react';
 import { Html5Plain } from 'devicons-react';  
 
-import { VscodeOriginal, CsharpOriginal, XmlPlain, YamlOriginal, NetlifyPlain, SqlserverPlainWordmark, PostmanOriginal, JetbrainsriderPlainWordmark, JiraOriginal, AzuredevopsPlain, DotnetOriginal, AspdotnetOriginal, NextdotjsPlainWordmark, DockerOriginalWordmark, MysqlworkbenchPlain, MongodbOriginalWordmark } from 'devicons-react';
+import { VscodeOriginal, CsharpOriginal, JiraOriginal, DockerOriginalWordmark, MongodbOriginalWordmark } from 'devicons-react';
 
 // import { CsharpOriginal } from 'devicons-react'; 
 // import { XmlPlain } from 'devicons-react'; 
