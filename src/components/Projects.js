@@ -14,7 +14,7 @@ function Projects() {
 
   return (
     <div id='projects' className="p-4">
-      <h1 className='text-textGreen text-2xl md:text-3xl mb-4 text-center'>My Projects</h1>
+      <h1 className='text-textGreen text-2xl md:text-3xl mb-4 text-center' style ={{color: '#306dbc', fontWeight:'700'}}>My Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="cursor-pointer overflow-hidden flex items-center justify-center" onClick={() => openProject({ name: 'Wordle Clone', image: 'wordleImg.png', description: 'Description of Wordle Clone', link: 'https://faria-wordle-clone.netlify.app/', skills: 'Skills required for Wordle Clone' })}>
           <div className="transition duration-300 ease-in-out transform hover:scale-105 hover:bg-textLight">
