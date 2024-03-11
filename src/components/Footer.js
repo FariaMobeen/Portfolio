@@ -1,12 +1,12 @@
 import React from "react";
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import OutlookIcon from '@mui/icons-material/AlternateEmail';
+// import OutlookIcon from '@mui/icons-material/AlternateEmail';
 import Tooltip from '@mui/material/Tooltip';
 
 function Footer() {
   const email = "fariamobeen124@gmail.com";
-  const outlookEmail = "fariamobeen124@gmail.com";
+  // const outlookEmail = "fariamobeen124@gmail.com";
 
   return (
     <div className="bg-bg1 text-textLight p-4">
