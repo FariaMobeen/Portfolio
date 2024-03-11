@@ -78,7 +78,7 @@ function Skills() {
 
 
   return (
-    <section id='skills' className='bg-bg1 my-10'>
+    <section id='skills' className='bg-bg1 my-10' style={{background:'black'}}>
       <h2 className='text-textGreen text-3xl font-bold text-center mb-10' style ={{color: '#306dbc', fontWeight:'700'}}>Skills</h2>
       <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center '>
         {skills.map((skill, index) => (

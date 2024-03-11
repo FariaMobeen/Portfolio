@@ -10,16 +10,17 @@ import Experience from './components/Experience';
 
 function App() {
   return (
-    <div className="App bg-bg1">
-      <Navbar/>
-      <Intro/>
-      <About/>
-      <Skills/>
-      <Experience/>
-      <Projects/>
-      <ToTop/>
-      <Footer/>
-    </div>
+    <div className="App bg-bg1" style={{ background: 'black' }}>
+    <Navbar style={{ background: 'black' }} />
+    <Intro style={{ background: 'black' }} />
+    <About style={{ background: 'black' }} />
+    <Skills style={{ background: 'black' }} />
+    <Experience style={{ background: 'black' }} />
+    <Projects style={{ background: 'black' }} />
+    <ToTop style={{ background: 'black' }} />
+    <Footer style={{ background: 'black' }} />
+  </div>
+  
   );
 }
 

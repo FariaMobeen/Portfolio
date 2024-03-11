@@ -9,7 +9,7 @@ function Footer() {
   // const outlookEmail = "fariamobeen124@gmail.com";
 
   return (
-    <div className="bg-bg1 text-textLight p-4">
+    <div className="bg-bg1 text-textLight p-4" style={{background:'black'}}>
       <div className="flex justify-center space-x-4">
         <Tooltip title="Gmail" arrow>
           <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">

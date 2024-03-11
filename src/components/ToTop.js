@@ -24,7 +24,7 @@ function ToTop() {
                 height:"50px",
                 width:"50px",
                 fontSize:"50px",
-                color:"#64ffda"
+                color: '#306dbc'
             }}
             onClick={scrollUp}
         />)}

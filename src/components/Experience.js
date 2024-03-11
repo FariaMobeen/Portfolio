@@ -16,14 +16,15 @@ function Experience() {
       </div>
       <div className="w-full md:w-2/3 items-center">
         <VerticalTimeline lineColor="#ccd6f6">
-          <VerticalTimelineElement
+          <VerticalTimelineElement 
             date="May 2022 - August 2022"
             className="text-blue-500"
             iconStyle={{ background: "#3e497a", color: "#ccd6f6" }}
             icon={<WorkIcon />}
+            
           >
             <h3 className="text-xl font-bold">
-              Wireless Specialist Intern, Calgary, Alberta 
+              Wireless Specialist Intern 
             </h3>
             <h4 className="font-semibold">
             Calgary, Alberta 
