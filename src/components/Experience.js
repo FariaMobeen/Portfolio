@@ -23,13 +23,15 @@ function Experience() {
             icon={<WorkIcon />}
             
           >
-            <h3 className="text-xl font-bold">
-              Wireless Specialist Intern 
-            </h3>
-            <h4 className="font-semibold">
-            Calgary, Alberta 
-            </h4>
-            <p> Bell Canada </p>
+           <h3 className="text-xl font-bold text-black">
+  Wireless Specialist Intern
+</h3>
+<h4 className="font-semibold text-black">
+  Calgary, Alberta
+</h4>
+
+<p className="text-black">Bell Mobility</p>
+
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
@@ -38,13 +40,14 @@ function Experience() {
             iconStyle={{ background: "#3e497a", color: "#fff" }}
             icon={<WorkIcon />}
           >
-            <h3 className="text-xl font-bold">
-              Software Developer Intern 
-            </h3>
-            <h4 className="font-semibold">
-            Calgary, Alberta 
-            </h4>
-            <p> Bell Canada </p>
+           <h3 className="text-xl font-bold text-black">
+  Software Developer Intern 
+</h3>
+<h4 className="font-semibold text-black">
+  Calgary, Alberta 
+</h4>
+<p className="text-black">Bell Canada</p>
+
           </VerticalTimelineElement>
 
      

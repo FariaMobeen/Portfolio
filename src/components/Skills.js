@@ -8,7 +8,7 @@ import { MysqlOriginalWordmark } from 'devicons-react';
 import { PythonOriginalWordmark } from 'devicons-react';
 import { COriginal } from 'devicons-react';
 import { CplusplusOriginal } from 'devicons-react';
-// import { GithubOriginal } from 'devicons-react';
+import { GithubOriginal } from 'devicons-react';
 // import { BootstrapPlainWordmark } from 'devicons-react';
 // import { SpringOriginal } from 'devicons-react';
 // import { TailwindcssPlain } from 'devicons-react';
@@ -58,7 +58,7 @@ function Skills() {
     { name: 'Node.js', Icon: NodejsPlain, proficiency: '80%' },
     { name: 'Java', Icon: JavaOriginalWordmark, proficiency: '95%' },
     { name: 'AWS', Icon: AmazonwebservicesOriginal, proficiency: '80%' },
-    // { name: 'GitHub', Icon: GithubOriginal, proficiency: '85%' },
+    { name: 'GitHub', Icon: GithubOriginal, proficiency: '85%' },
     { name: 'MySQL', Icon: MysqlOriginalWordmark, proficiency: '75%' },
     { name: 'Python', Icon: PythonOriginalWordmark, proficiency: '95%' },
     { name: 'C/C++', Icon: COriginal, proficiency: '95%' },
@@ -74,6 +74,7 @@ function Skills() {
    
     { name: 'Docker', Icon: DockerOriginalWordmark, proficiency: '85%' },
     { name: 'MongoDB', Icon: MongodbOriginalWordmark, proficiency: '85%' }
+
 ];
 
 
