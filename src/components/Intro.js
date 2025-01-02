@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../Assets/logo.JPG'
+import logo from '../assets/logo.JPG'
 import TypeWriter from "typewriter-effect"
 
 function Intro() {

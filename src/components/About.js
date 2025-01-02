@@ -1,6 +1,6 @@
 import React from 'react';
-import pic1 from '../Assets/pic1.png';
-import pic2 from '../Assets/pic2.png';
+import pic1 from '../assets/pic1.png';
+import pic2 from '../assets/pic2.png';
 
 function About() {
   return (
