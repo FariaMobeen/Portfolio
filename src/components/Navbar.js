@@ -1,28 +1,106 @@
-import React from 'react';
-import logo from '../assets/logo.png';
+import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import logo from "./logo.png";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+import {
+  AiOutlineHome,
+  AiOutlineFundProjectionScreen,
+  AiOutlineUser,
+} from "react-icons/ai";
 
-    const scrollToSection = (sectionId) => {
-        const section = document.getElementById(sectionId);
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    };
+import { CgFileDocument } from "react-icons/cg";
 
-    return (
-        <div className="bg-black">
-            <div className="flex items-center justify-center p-4 shadow-md text-textLight">
-                <div className="hidden md:block md:absolute md:left-4">
-                    <img style={{ width: '50px', height: '50px' }} src={logo} alt='logo' />
-                </div>
-                <div className="flex gap-2 md:text-2xl">
-                    <button onClick={() => scrollToSection('about')} className="font-semibold py-2 px-4 rounded hover:bg-blue-500 transition duration-300">About</button>
-                    <button onClick={() => scrollToSection('skills')} className="font-semibold py-2 px-4 rounded hover:bg-blue-500 transition duration-300">Skills</button>
-                    <button onClick={() => scrollToSection('experience')} className="font-semibold py-2 px-4 rounded hover:bg-blue-500 transition duration-300">Experience</button>
-                    <button onClick={() => scrollToSection('projects')} className="font-semibold py-2 px-4 rounded hover:bg-blue-500 transition duration-300">Projects</button>
-                </div>
-            </div>
-        </div>
-    );
-};
+function NavBar() {
+  const [expand, updateExpanded] = useState(false);
+  const [navColour, updateNavbar] = useState(false);
 
-export default Navbar;
+  function scrollHandler() {
+    if (window.scrollY >= 20) {
+      updateNavbar(true);
+    } else {
+      updateNavbar(false);
+    }
+  }
+
+  window.addEventListener("scroll", scrollHandler);
+
+  return (
+    <Navbar
+      expanded={expand}
+      fixed="top"
+      expand="md"
+      className={navColour ? "sticky" : "navbar"}
+    >
+      <Container>
+      <Navbar.Brand href="/" className="d-flex">
+  <img
+    src={logo}
+    className="img-fluid logo"
+    alt="brand"
+    style={{ width: "250px", height: "250px" }}  // Adjust size here
+  />
+</Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => {
+            updateExpanded(expand ? false : "expanded");
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto" defaultActiveKey="#home">
+            <Nav.Item>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/about"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/project"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/resume"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+
+
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default NavBar;

@@ -1,26 +1,49 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import Intro from './components/Intro'
-import About from './components/About';
-import Projects from './components/Projects';
-import ToTop from './components/ToTop';
-import Footer from './components/Footer';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
+import React, { useState, useEffect } from "react";
+import Preloader from "../src/components/Pre";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer";
+import Resume from "./components/Resume/ResumeNew";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate
+} from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+import "./style.css";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+  const [load, upadateLoad] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      upadateLoad(false);
+    }, 1200);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="App bg-bg1" style={{ background: 'black' }}>
-    <Navbar style={{ background: 'black' }} />
-    <Intro style={{ background: 'black' }} />
-    <About style={{ background: 'black' }} />
-    <Skills style={{ background: 'black' }} />
-    <Experience style={{ background: 'black' }} />
-    <Projects style={{ background: 'black' }} />
-    <ToTop style={{ background: 'black' }} />
-    <Footer style={{ background: 'black' }} />
-  </div>
-  
+    <Router>
+      <Preloader load={load} />
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <Navbar />
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/"/>} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
