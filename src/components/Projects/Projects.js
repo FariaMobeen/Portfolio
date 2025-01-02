@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import wordleImg from "../../Assets/Projects/wordleImg.png";
-import noteApp from "../../Assets/Projects/noteApp.png";
-import storyGenerator from "../../Assets/Projects/storygenerator.png";
-import flightApp from "../../Assets/Projects/flightApp.png";
-import vetScheduler from "../../Assets/Projects/vetScheduler.png";
-import eventBooking from "../../Assets/Projects/eventBooking.png";
+import wordleImg from "../../assets/Projects/wordleImg.png";
+import noteApp from "../../assets/Projects/noteApp.png";
+import storyGenerator from "../../assets/Projects/storygenerator.png";
+import flightApp from "../../assets/Projects/flightApp.png";
+import vetScheduler from "../../assets/Projects/vetScheduler.png";
+import eventBooking from "../../assets/Projects/eventBooking.png";
 
 
 
