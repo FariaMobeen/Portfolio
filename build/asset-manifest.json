@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.842c3d70.css",
-    "main.js": "/static/js/main.824572ba.js",
-    "static/js/787.4edfa1d0.chunk.js": "/static/js/787.4edfa1d0.chunk.js",
-    "static/media/pic2.png": "/static/media/pic2.19e646f4e355d7586a0a.png",
-    "static/media/logo.JPG": "/static/media/logo.5119a63c8e4c74d972a8.JPG",
-    "static/media/logo.png": "/static/media/logo.fd8e1a9487cc58bf0a78.png",
-    "static/media/pic1.png": "/static/media/pic1.2336ac93eb002e668ae2.png",
+    "main.css": "/static/css/main.bb1a260f.css",
+    "main.js": "/static/js/main.8492ca10.js",
+    "static/media/eventBooking.png": "/static/media/eventBooking.8b3e356985c792b271ff.png",
+    "static/media/about.png": "/static/media/about.c7a7ee057acb4049cd6b.png",
+    "static/media/storygenerator.png": "/static/media/storygenerator.4ba0ab798b7b45296c56.png",
+    "static/media/homemain.png": "/static/media/homemain.82ed82483aab05b32aa5.png",
+    "static/media/Resume_FariaMobeen.pdf": "/static/media/Resume_FariaMobeen.7112d3f612acb963731f.pdf",
+    "static/media/noteApp.png": "/static/media/noteApp.e672427076c4865f293d.png",
+    "static/media/wordleImg.png": "/static/media/wordleImg.4bb6f80a2415923ba8c2.png",
+    "static/media/logo.png": "/static/media/logo.914c87dfd540a4cf3fe5.png",
+    "static/media/avatar.JPG": "/static/media/avatar.5119a63c8e4c74d972a8.JPG",
+    "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/vetScheduler.png": "/static/media/vetScheduler.aa4dedb59a12bbdff0c8.png",
+    "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
-    "main.842c3d70.css.map": "/static/css/main.842c3d70.css.map",
-    "main.824572ba.js.map": "/static/js/main.824572ba.js.map",
-    "787.4edfa1d0.chunk.js.map": "/static/js/787.4edfa1d0.chunk.js.map"
+    "main.bb1a260f.css.map": "/static/css/main.bb1a260f.css.map",
+    "main.8492ca10.js.map": "/static/js/main.8492ca10.js.map"
   },
   "entrypoints": [
-    "static/css/main.842c3d70.css",
-    "static/js/main.824572ba.js"
+    "static/css/main.bb1a260f.css",
+    "static/js/main.8492ca10.js"
   ]
 }
